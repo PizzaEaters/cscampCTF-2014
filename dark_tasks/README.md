@@ -1,6 +1,12 @@
 Dark tasks
 ==========
 
+### Desc:
+
+The Dark Tasks is a Hidden web belonging to a group of criminals who are planning their upcoming crime, so you need to reveal their secrets at their /Home
+
+### Getting the flag:
+
 Acessando a página http://178.63.58.69:8086/, havia uma imagem e no código-fonte
 foi possível visualizar duas mensagens em b64. Ignorando elas, partimos para olhar
 o `robots.txt`, o que nos deu uma boa pista:
