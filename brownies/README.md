@@ -2,8 +2,10 @@ Brownies
 ========
 
 ### Desc:
+
 Hint: think of default files when using source code management systems
 
+### Getting the flag:
 
 Dada a descrição da task, uma das primeiras tentativas foi olhar: http://178.63.58.69:8083/.svn
 O que continha o seguinte:

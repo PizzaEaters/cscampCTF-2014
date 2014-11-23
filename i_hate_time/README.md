@@ -1,5 +1,12 @@
-I have Time
+I hate Time
 ===========
+
+### Desc:
+
+Tick Tock
+hints: flag in /flag.txt
+
+### Getting the flag:
 
 Olhando o site em http://178.63.58.69:8081/ foi notado a seguinte URI `/images/now`,
 a qual gera uma imagem mostrando o tempo atual. Modificando 'now' para 'today' podemos
