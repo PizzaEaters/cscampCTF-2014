@@ -25,7 +25,7 @@ pode nos ajudar descobrir que usuário está sendo usado para acessar o bd do si
 
 Desenvolvendo um código para ajudar nesse trabalho (não quis usar sqlmap), ficou:
 
-```
+```python
 import requests
 import string
 import sys
