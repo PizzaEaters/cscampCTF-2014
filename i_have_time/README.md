@@ -10,7 +10,9 @@ A partir dai a ideia é ler o arquivo /flag.txt, que é mencionado na descriçã
 através de possivel chamada de método encadeada.
 
 Testando varias coisas foi possível perceber que ao testar [2]:
-```/images/now().strftime("/flag.txt").strip```
+```
+/images/now().strftime("/flag.txt").strip
+```
 
 ().flag.txt era exibida na imagem, o que exigiu procurar uma outra forma de passar tal
 string na url, o que pode ser feito de N formas, passando em hex seria uma delas.
